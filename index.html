@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/main.css'>
+    <link rel="stylesheet" href="./assets/fonts/css/all.css">
+    <link rel="stylesheet" href="./assets/fonts/css/solid.css">
+    <link rel="stylesheet" href="./assets/fonts/webfonts/fa-solid-900.ttf">
+    <link rel="stylesheet" href="./assets/fonts/webfonts/fa-solid-900.woff2">
+</head>
+
+<body>
+    <div class="container-form">
+        <form id="form-user" data-form>
+            <h1>Cadastre-se!</h1>
+            <div class="div-user">
+                <div class="div-user-2">
+                    <label class="form-label" for="id-user">Usuario</label>
+                    <input id="id-user" type="email" name="id-user" class="form-input-generic"
+                        placeholder="e-mail de usuário" required data-input>
+                </div>
+                <span class="form-message-error" data-error-message>Campo obrigatório</span>
+            </div>
+            <div class="div-pass">
+                <div class="div-pass-2">
+                    <label class="form-label" for="id-pass">Senha</label>
+                    <input id="id-pass" type="password" name="id-pass" class="form-input-generic" placeholder="senha"
+                        required data-input>
+                </div>
+                <span class="form-message-error" data-error-message>Campo obrigatório</span>
+            </div>
+            <input id="id-submit" type="submit" value="Entrar">
+            <div class="info">
+                <div class="requirements__progress-bar" data-requirement-progressbar data-percentage="0"></div>
+                <ul class="info-list">
+                    <li class="info-item" data-requirement-item="minCharacter"><i class="fas"></i>Número de caracteres:
+                        mínimo 8</li>
+                    <li class="info-item" data-requirement-item="upperLowerCase"><i class="fas"></i>Conter pelo menos uma
+                        letra maíuscula e uma letra minúscula</li>
+                    <li class="info-item" data-requirement-item="number"><i class="fas"></i>Números de 0 a 9</li>
+                    <li class="info-item" data-requirement-item="specialCharacter"><i class="fas"></i>Caracteres
+                        especiais: @#$%& </li>
+                </ul>
+            </div>
+        </form>
+    </div>
+    <script src='./assets/js/main.js'></script>
+</body>
+
+</html>
